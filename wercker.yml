@@ -23,4 +23,9 @@ build:
     - script:
         name: echo
         code: |
-          echo "Hi SID!"
+          echo "Hi SID!      
+ test_job:
+  stage: test
+  script:
+  - make test
+    
