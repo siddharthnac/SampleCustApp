@@ -24,11 +24,6 @@ build:
         name: echo
         code: |
           echo "Hi SID!      
-  test:
-   steps: 
-    - script:
-        name: echo
-        code: |
-          echo "Hello !"
+  
         
     
