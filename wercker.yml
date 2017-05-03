@@ -32,14 +32,13 @@ build:
  //           echo "Welcome"
  //         
  //
- build:
-  # The steps that will be executed on build
+deploy:
   steps:
-    # A step that executes `gradle build` command
     - script:
-        name: gradle build
+        name: install aws cli tools
         code: |
-          ./gradlew --full-stacktrace -q --project-cache-dir=$WERCKER_CACHE_DIR build         
+          sudo apt-get install python-pip zip -y
+          sudo pip install awscli       
           
   
         
