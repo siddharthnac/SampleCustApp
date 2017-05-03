@@ -32,7 +32,7 @@ build:
  //           echo "Welcome"
  //         
  //
-deploy:
+test:
   steps:
     - script:
         name: install aws cli tools
